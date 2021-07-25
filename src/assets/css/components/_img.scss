@@ -1,0 +1,31 @@
+.img-cover {
+  object-position: center top;
+  object-fit: cover;
+  height: calc(5vw);
+  max-height: 400px;
+  min-height: 175px;
+  width: 100%;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  @include media-breakpoint-down(md) {
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0;
+    min-height: 250px;
+  }
+  @include media-breakpoint-down(sm) {
+    min-height: 200px;
+  }
+}
+
+.img-top-about {
+  object-position: center 15%;
+  object-fit: cover;
+  height: 750px;
+  width: 100%;
+  @include media-breakpoint-down(md) {
+    height: 350px;
+  }
+  @include media-breakpoint-down(sm) {
+    height: 250px;
+  }
+}

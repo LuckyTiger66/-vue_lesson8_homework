@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/functions";
+@import "./helps/variables";
+@import "~bootstrap/scss/mixins";
+@import "./helps/utilities";
+// sass 對應node_modules
+@import "~bootstrap";
+// swiper
+@import "~swiper/swiper.scss";
+@import "~swiper/components/navigation/navigation.min.css";
+@import "~swiper/components/thumbs/thumbs.min.css";
+// 自定義css
+@import "./components/layout";
+@import "./components/animation";
+@import "./components/top";
+@import "./components/navtop";
+@import "./components/section";
+@import "./components/table";
+@import "./components/img";
+@import "./components/pagination";
+@import "./components/login";
