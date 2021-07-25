@@ -18,7 +18,7 @@
             src="https://i.imgur.com/p7Vsu83.png"
             alt="WECARD"
             class="d-inline-block align-text-top nav-logo"
-            width="120"
+            width="50"
           />
         </router-link>
       </p>

@@ -16,7 +16,7 @@
           <img
             src="https://i.imgur.com/p7Vsu83.png"
             alt="WECARD"
-            width="120"
+            width="50"
             class="d-inline-block align-text-top"
           />
         </router-link>

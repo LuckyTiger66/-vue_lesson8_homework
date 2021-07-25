@@ -3,7 +3,7 @@
   <figure class="my-5 text-center mx-auto">
     <img
       class="img-fluid"
-      src="https://storage.googleapis.com/vue-course-api.appspot.com/leolee/1626638328976.png?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=AEobiA3PaimJxUH05FoodErufJ6jRC%2FB4onnCbutqk6Bfz%2Fx44GFznWSgS9VkIcCfxnSjyTwZrLzlt381TiyA0y6Y4xWcpG1X7A6TugycKo5A8Fr1JvDqKuVN%2BdZ4RxfUuISY3XNv1IeHR0m5NQ7%2Fvhz40kLaWOqGTpsmWf3auj6A8XW%2Bu%2Ff0yysBIjh0Jrp8k1Vkm6tsd8D%2FCGNsjNyRWJiLnXIeeEhPYC0Sg4KQMsZFQZ%2FP2GXqqzWVSunhoUCzOU9YTTXl1FrBL1Ox%2BLr01VAy9rOgbcuVewi3bD%2FfO1Y9sqwjyJ%2FPRzS1Wue7HM2fuEayy0PkgEa9cU4mbSuow%3D%3D"
+      src="https://i.imgur.com/Hz4oeZI.png"
       alt="step5 完成付款"
     />
   </figure>

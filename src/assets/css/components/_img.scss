@@ -16,16 +16,3 @@
     min-height: 200px;
   }
 }
-
-.img-top-about {
-  object-position: center 15%;
-  object-fit: cover;
-  height: 750px;
-  width: 100%;
-  @include media-breakpoint-down(md) {
-    height: 350px;
-  }
-  @include media-breakpoint-down(sm) {
-    height: 250px;
-  }
-}
