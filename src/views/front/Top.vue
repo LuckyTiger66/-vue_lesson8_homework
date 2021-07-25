@@ -27,7 +27,7 @@
     </section>
     <section class="top-products section py-6">
       <div class="container px-4 px-sm-0">
-        <h3
+        <h2
           class="section-title mb-5"
           data-aos="fade-up"
           data-aos-easing="linear"
@@ -45,7 +45,7 @@
           >
             請選擇您有興趣的商品類別
           </p>
-        </h3>
+        </h2>
         <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3">
           <div
             v-for="item in this.category"
