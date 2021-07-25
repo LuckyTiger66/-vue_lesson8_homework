@@ -29,8 +29,8 @@
                 <template v-if="tempProduct.imagesUrl">
                   <swiper
                     :style="{
-                      '--swiper-navigation-color': '#562a4d',
-                      'text-shadow': '1px 1px 4px #562a4d',
+                      '--swiper-navigation-color': '#663399',
+                      'text-shadow': '1px 1px 4px #663399',
                     }"
                     :spaceBetween="10"
                     :navigation="true"
