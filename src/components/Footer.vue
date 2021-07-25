@@ -10,12 +10,12 @@
       flex-column
     "
   >
-    <div class="order-2 mt-2 mt-sm-0 position-sm-absolute copyRight">
+    <div class="position-absolute top-0 end-0">
       <router-link class="text-link" to="/login">
         <span class="material-icons"> account_box </span>
       </router-link>
     </div>
-    <small class="text-light"
+    <small class="text-light copyRight"
       >© 2021
       <a class="text-link text-decoration-none" href="#" target="_blank"
         >WeCard</a
