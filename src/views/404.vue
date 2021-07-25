@@ -7,7 +7,7 @@
     <div class="container pt-8 pb-4 content position-relative">
       <div class="col position-relative">
         <figure class="ms-4 mb-0">
-          <img src="../assets/images/404.png" alt="塔尼亞" class="img-fluid" />
+          <img src="../assets/images/404.png" alt="404" class="img-fluid" />
         </figure>
       </div>
       <h2 class="fs-xl text-light">404</h2>
