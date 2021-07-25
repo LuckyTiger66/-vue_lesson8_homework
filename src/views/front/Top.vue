@@ -25,7 +25,7 @@
         </div>
       </div>
     </section>
-    <section class="top-products section py-6">
+    <section id="main" class="top-products section py-6">
       <div class="container px-4 px-sm-0">
         <h2
           class="section-title mb-5"
