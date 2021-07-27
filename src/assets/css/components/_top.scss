@@ -31,67 +31,39 @@
   }
 }
 
-.top-scrolldown {
+.scrollDown a {
   position: absolute;
-  bottom: 3.38542%;
-  right: 4%;
-  display: block;
-  padding-right: 180px;
-  overflow: hidden;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   color: #fff;
-  font-weight: bold;
-  font-size: .6rem;
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.2;
-  -webkit-transform: rotate(90deg) translate(0%, -100%);
-  -ms-transform: rotate(90deg) translate(0%, -100%);
-  transform: rotate(90deg) translate(0%, -100%);
-  -webkit-transform-origin: bottom right;
-  -ms-transform-origin: bottom right;
-  transform-origin: bottom right;
-  letter-spacing: .3em;
-  @include media-breakpoint-down(md) {
-    right: 8%;
-  }
-  &::after {
-    position: absolute;
-    right: 0;
-    bottom: 8px;
-    display: block;
-    width: 0;
-    height: 0;
-    border-color: transparent transparent transparent #fff;
-    border-style: solid;
-    border-width: 5px 0 0 5px;
-    content: "";
-  }
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+.scrollDown a:hover {
+  opacity: .5;
 }
 
-.top-scrolldown__line {
+#scroll a {
+  padding-top: 60px;
+}
+#scroll a span {
   position: absolute;
-  right: 0;
-  bottom: 7px;
-  display: block;
-  width: 166px;
-  height: 1px;
-  overflow: hidden;
-  &::before,
-  &::after {
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: inherit;
-    content: "";
-  }
-  &::before {
-    background-color: #fff;
-  }
-  &::after {
-    background-color: #333;
-    -webkit-animation: line-scroll 1.3s cubic-bezier(0.215, 0.61, 0.355, 1)
-      infinite;
-    animation: line-scroll 1.3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-  }
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
 }
 
 @-webkit-keyframes line-scroll {

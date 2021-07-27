@@ -5,9 +5,6 @@
   <main>
     <section class="top">
       <div class="container-fluid position-relative">
-        <div class="top-scrolldown">
-          SCROLL DOWN<span class="top-scrolldown__line"></span>
-        </div>
         <div class="container position-relative vh-100">
           <div class="top__inner">
             <h1 class="top__title text-light">WeCard<br />微卡爾德</h1>
@@ -23,6 +20,9 @@
             >
           </div>
         </div>
+        <section id="scroll" class="scrollDown">
+          <a href="" @click.prevent="clickSilder"><span></span>Scroll</a>
+        </section>
       </div>
     </section>
     <section id="main" class="top-products section py-6">
@@ -193,6 +193,13 @@ export default {
       for (let index = 3; index < maxSize; index++) {
         this.newArticles.push(this.articles[index]);
       }
+    },
+    clickSilder() {
+      let el = document.querySelector("#main");
+      // chrome
+      document.body.scrollTop = el.offsetTop;
+      // firefox
+      document.documentElement.scrollTop = el.offsetTop;
     },
   },
   mounted() {
