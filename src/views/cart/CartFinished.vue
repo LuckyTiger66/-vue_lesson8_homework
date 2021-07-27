@@ -3,7 +3,7 @@
   <figure class="my-5 text-center mx-auto">
     <img
       class="img-fluid"
-      src="https://i.imgur.com/Hz4oeZI.png"
+      src="https://i.imgur.com/tHrZmfj.png"
       alt="step5 完成付款"
     />
   </figure>

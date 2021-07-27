@@ -4,7 +4,7 @@
     <figure class="my-5 text-center mx-auto">
       <img
         class="img-fluid"
-        src="https://i.imgur.com/g2pxnSo.png"
+        src="https://i.imgur.com/Gl1Wtdm.png"
         alt="step3 確認訂單內容"
       />
     </figure>

@@ -3,7 +3,7 @@
   <figure class="my-5 text-center mx-auto">
     <img
       class="img-fluid"
-      src="https://i.imgur.com/ZpO0022.png"
+      src="https://i.imgur.com/AC7oLKq.png"
       alt="step4 完成下訂"
     />
   </figure>

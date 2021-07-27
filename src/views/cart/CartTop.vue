@@ -5,7 +5,7 @@
       <figure class="my-5 text-center mx-auto">
         <img
           class="img-fluid"
-          src="https://i.imgur.com/RgQdH4y.png"
+          src="https://i.imgur.com/BNZuZJC.png"
           alt="step1 確認購物車"
         />
       </figure>
