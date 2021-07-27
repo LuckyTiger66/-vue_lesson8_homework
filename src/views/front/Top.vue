@@ -136,17 +136,17 @@ export default {
     return {
       category: [
         {
-          name: "魔法風雲會卡牌",
+          name: "魔法風雲會",
           enName: "MTG",
           imgUrl: "https://i.imgur.com/bUgfdTc.png",
         },
         {
-          name: "寶可夢卡牌",
+          name: "寶可夢",
           enName: "PTCG",
           imgUrl: "https://i.imgur.com/vBkYlSR.png",
         },
         {
-          name: "遊戲王卡牌",
+          name: "遊戲王",
           enName: "Yu-Gi-Oh",
           imgUrl: "https://i.imgur.com/I0U2aYB.png",
         },
