@@ -94,10 +94,10 @@ export default {
       article: {},
       category: [
         {
-          name: "魔法風雲會",
+          name: "寶可夢",
         },
         {
-          name: "寶可夢",
+          name: "魔法風雲會",
         },
         {
           name: "遊戲王",
