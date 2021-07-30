@@ -20,14 +20,39 @@
 
 .top__title {
   font-size: 4rem;
-  padding-right: 3rem;
-  border-right: 2px solid #fff;
   @include media-breakpoint-down(lg) {
-    padding-right: 2rem;
     font-size: 3rem;
   }
   @include media-breakpoint-down(md) {
     font-size: 2rem;
+  }
+}
+
+.typing {
+  width: 4em;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  animation: typing 3s steps(4, end), blinkCursor 0.75s step-end infinite;
+  overflow: hidden;
+  letter-spacing: 0;
+}
+/* 打字動畫 */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 4em;
+  }
+}
+/* 閃爍游標 */
+@keyframes blinkCursor {
+  from,
+  to {
+    box-shadow: 2px 0 0 0 transparent;
+  }
+  50% {
+    box-shadow: 2px 0 0 0;
   }
 }
 
