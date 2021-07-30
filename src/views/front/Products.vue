@@ -108,9 +108,9 @@
                       v-if="myFavorite.includes(item.id)"
                       class="material-icons"
                     >
-                      star
+                      favorite
                     </span>
-                    <span v-else class="material-icons"> star_border </span>
+                    <span v-else class="material-icons"> favorite_border </span>
                   </a>
                   <button
                     @click="addCart(item.id)"

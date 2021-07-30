@@ -145,9 +145,9 @@
                       v-if="myFavorite.includes(tempProduct.id)"
                       class="material-icons"
                     >
-                      star
+                      favorite
                     </span>
-                    <span v-else class="material-icons"> star_border </span>
+                    <span v-else class="material-icons"> favorite_border </span>
                   </a>
                 </div>
               </div>
@@ -188,9 +188,11 @@
                         v-if="myFavorite.includes(item.id)"
                         class="material-icons"
                       >
-                        star
+                        favorite
                       </span>
-                      <span v-else class="material-icons"> star_border </span>
+                      <span v-else class="material-icons">
+                        favorite_border
+                      </span>
                     </a>
                     <div class="card-footer d-flex position-relative">
                       <button
