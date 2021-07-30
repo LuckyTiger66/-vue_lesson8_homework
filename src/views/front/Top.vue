@@ -33,10 +33,7 @@
           data-aos-easing="linear"
           data-aos-duration="300"
         >
-          <p class="section-title__text h2">
-            <span class="material-icons section-icon"> flare </span>
-            選購商品
-          </p>
+          <p class="section-title__text h2">選購商品</p>
           <p
             class="section-title__text fw-normal fs-6 fs-sm-5"
             data-aos="fade-up"
