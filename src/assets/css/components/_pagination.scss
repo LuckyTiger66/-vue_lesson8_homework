@@ -4,7 +4,7 @@
   list-style: none;
   & .c-page-item.active .c-page-link {
     color: #fff;
-    background-color: #663399;
+    background-color: #ffd26c;
   }
   & .c-page-item.disabled {
     & .c-page-link {
@@ -36,7 +36,7 @@
   text-align: center;
   &:hover {
     z-index: 2;
-    color: #45223e;
+    color: #FFBE2C;
     background-color: #e9ecef;
     border-color: #dee2e6;
   }
