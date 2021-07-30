@@ -8,7 +8,8 @@
         <div class="container position-relative vh-100">
           <div class="top__inner">
             <h1 class="top__title text-light">
-              WeCard<br /><div class="typing">微卡爾德</div>
+              WeCard<br />
+              <div class="typing">微卡爾德</div>
             </h1>
             <p class="top__subtitle text-light h6 fw-normal mb-2 mb-md-4">
               集換式卡牌相關的商品，追蹤最新消息
