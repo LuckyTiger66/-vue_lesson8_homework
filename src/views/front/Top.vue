@@ -11,17 +11,12 @@
             <p class="top__subtitle text-light h6 fw-normal mb-2 mb-md-4">
               集換式卡牌相關的商品，追蹤最新消息
             </p>
-            <router-link
-              class="top__button btn btn-outline-light w-100"
-              to="/products"
-              >商品列表<span class="material-icons">
-                navigate_next
-              </span></router-link
-            >
           </div>
         </div>
         <section id="scroll" class="scrollDown">
-          <a href="" @click.prevent="clickSilder"><span></span>Scroll</a>
+          <a href="" @click.prevent="clickSilder"
+            ><span></span>往下看更多內容</a
+          >
         </section>
       </div>
     </section>
