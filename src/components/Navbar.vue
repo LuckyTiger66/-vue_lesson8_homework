@@ -25,7 +25,7 @@
         <li v-if="myFavorite.length > 0" class="nav-item me-3">
           <router-link class="nav-link text-decoration-none" to="/favorite"
             ><span class="material-icons position-relative h1">
-              star
+              favorite_border
               <span
                 v-if="myFavorite.length"
                 class="
@@ -113,7 +113,7 @@
                 class="material-icons position-relative"
                 style="font-size: 2.8rem"
               >
-                star
+                favorite_border
                 <span
                   v-if="myFavorite.length"
                   class="
