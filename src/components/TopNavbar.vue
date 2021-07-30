@@ -95,24 +95,22 @@
       >
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link
-              class="nav-link text-decoration-none header-nav-link fs-5"
-              to="/"
-              >首頁<span class="text-uppercase">top</span></router-link
+            <router-link class="nav-link text-decoration-none fs-4" to="/"
+              >首頁</router-link
             >
           </li>
           <li class="nav-item">
             <router-link
-              class="nav-link text-decoration-none header-nav-link fs-5"
+              class="nav-link text-decoration-none fs-4"
               to="/products"
-              >主打商品<span class="text-uppercase">goods</span></router-link
+              >主打商品</router-link
             >
           </li>
           <li class="nav-item">
             <router-link
-              class="nav-link text-decoration-none header-nav-link fs-5"
+              class="nav-link text-decoration-none fs-4"
               to="/articles"
-              >最新消息<span class="text-uppercase">news</span></router-link
+              >最新消息</router-link
             >
           </li>
           <li
