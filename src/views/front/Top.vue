@@ -70,62 +70,15 @@
         </div>
       </div>
     </section>
-    <section class="top-news section pt-4 pb-2">
-      <div class="container">
-        <dl class="top-news__inner">
-          <dt class="top-news__title">
-            <div
-              class="d-flex"
-              v-if="newArticles"
-              data-aos="fade-up"
-              data-aos-easing="linear"
-              data-aos-duration="500"
-            >
-              <a href="#" class="me-3"
-                ><img
-                  src="https://i.imgur.com/5O5GpDm.png"
-                  alt=""
-                  @click.prevent="getNewArticles"
-              /></a>
-              <router-link to="/articles">最新消息</router-link>
-              <a href="#" class="ms-3"
-                ><img
-                  src="https://i.imgur.com/fxZuC0F.png"
-                  @click.prevent="nextNewArticles"
-                  alt=""
-              /></a>
-            </div>
-          </dt>
-          <dd class="top-news__item">
-            <ul class="top-news__lists">
-              <li
-                v-for="item in newArticles"
-                :key="item"
-                class="top-news__list"
-              >
-                <router-link
-                  class="top-news__link text-light"
-                  :to="`/article/${item.id}`"
-                >
-                  <span class="top-news__date">
-                    <time :datetime="$filters.datetime(item.create_at)">
-                      {{ $filters.date(item.create_at) }}
-                    </time>
-                  </span>
-                  <span class="top-news__description">{{ item.title }}</span>
-                </router-link>
-              </li>
-            </ul>
-          </dd>
-        </dl>
-      </div>
-    </section>
+    <Subscribe />
+    <Toast ref="toast" />
   </main>
 </template>
 
 <script>
 import emitter from "../../assets/js/methods/emitter";
 import TopNavbar from "@/components/TopNavbar.vue";
+import Subscribe from "@/components/Subscribe.vue";
 export default {
   data() {
     return {
@@ -153,6 +106,7 @@ export default {
   },
   components: {
     TopNavbar,
+    Subscribe,
   },
   methods: {
     getArticles(num = this.pagination.current_page || 1) {
@@ -174,20 +128,6 @@ export default {
     clickCategory(category) {
       emitter.emit("categoryTop", category);
       this.$router.push(`/products/`);
-    },
-    getNewArticles() {
-      this.newArticles = [];
-      const maxSize = 3;
-      for (let index = 0; index < maxSize; index++) {
-        this.newArticles.push(this.articles[index]);
-      }
-    },
-    nextNewArticles() {
-      this.newArticles = [];
-      const maxSize = 6;
-      for (let index = 3; index < maxSize; index++) {
-        this.newArticles.push(this.articles[index]);
-      }
     },
     clickSilder() {
       let el = document.querySelector("#main");
