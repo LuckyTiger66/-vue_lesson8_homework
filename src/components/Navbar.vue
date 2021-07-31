@@ -84,7 +84,7 @@
         class="collapse navbar-collapse justify-content-end"
         id="navbarNavDropdown"
       >
-        <ul class="navbar-nav">
+        <ul class="navbar-nav align-items-center">
           <li class="nav-item">
             <router-link class="nav-link text-decoration-none fs-4" to="/"
               >首頁</router-link
