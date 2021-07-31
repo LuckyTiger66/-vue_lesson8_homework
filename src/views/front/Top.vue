@@ -71,7 +71,6 @@
       </div>
     </section>
     <Subscribe />
-    <Toast ref="toast" />
   </main>
 </template>
 

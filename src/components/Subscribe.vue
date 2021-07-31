@@ -14,7 +14,7 @@
             action=""
             v-slot="{ errors }"
             ref="subForm"
-            @submit="clickSubscribe"
+            @submit="showCouponCode"
           >
             <div class="input-group">
               <Field
@@ -32,12 +32,14 @@
                 type="submit"
                 :disabled="Object.keys(errors).length !== 0 || email === ''"
               />
+              <span class="text-danger pl-1 pt-2" v-if="errors[0]">{{
+                errors[0]
+              }}</span>
             </div>
           </Form>
         </div>
       </div>
     </figure>
-    <Toast ref="toast"></Toast>
   </section>
 </template>
 
@@ -49,10 +51,13 @@ export default {
     };
   },
   methods: {
-    clickSubscribe() {
-      this.email = "";
-      this.$refs.subForm.resetForm();
-      this.$refs.toast.showToast("訂閱成功，輸入『open99』享優惠");
+    showCouponCode() {
+      this.$swal({
+        title: "訂閱成功",
+        text: "優惠券代碼：open99",
+        timer: 2000,
+      });
+      this.form.reset();
     },
   },
 };

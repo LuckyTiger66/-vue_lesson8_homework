@@ -13,7 +13,6 @@ import { localize, setLocale } from "@vee-validate/i18n";
 import zhTW from "@vee-validate/i18n/dist/locale/zh_TW.json";
 import VueSweetalert2 from "vue-sweetalert2";
 import "sweetalert2/dist/sweetalert2.min.css";
-import Toast from "./components/Toast.vue"; // toast 通知回饋
 
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -61,8 +60,6 @@ app.use(CKEditor);
 app.component("Form", Form);
 app.component("Field", Field);
 app.component("ErrorMessage", ErrorMessage);
-// 註冊 toast 通知回饋
-app.component("Toast", Toast);
 
 app.mount("#app");
 
