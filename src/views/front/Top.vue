@@ -115,10 +115,8 @@ export default {
         .get(url)
         .then((res) => {
           if (res.data.success) {
-            const { articles, pagination } = res.data;
+            const articles = res.data;
             this.articles = articles;
-            this.pagination = pagination;
-            this.getNewArticles();
           }
         })
         .catch((error) => {
