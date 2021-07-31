@@ -12,7 +12,7 @@
     style="z-index: 10"
   >
     <div class="container-fluid">
-      <p class="w-auto mb-2 h1">
+      <p class="w-auto h1">
         <router-link class="navbar-brand" to="/">
           <img
             src="https://i.imgur.com/p7Vsu83.png"
@@ -89,11 +89,10 @@
           navbar-collapse
           position-lg-relative
           justify-content-lg-end
-          mb-2 mb-lg-0
         "
         id="navbarNavDropdown"
       >
-        <ul class="navbar-nav">
+        <ul class="navbar-nav align-items-center">
           <li class="nav-item">
             <router-link class="nav-link text-decoration-none fs-4" to="/"
               >首頁</router-link
