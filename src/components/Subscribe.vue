@@ -52,12 +52,13 @@ export default {
   },
   methods: {
     showCouponCode() {
+      this.email = "";
+      this.$refs.subForm.resetForm();
       this.$swal({
         title: "訂閱成功",
         text: "優惠券代碼：open99",
-        timer: 2000,
+        timer: 3000,
       });
-      this.form.reset();
     },
   },
 };
