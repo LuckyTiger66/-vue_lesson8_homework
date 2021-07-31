@@ -1,0 +1,29 @@
+.goTop {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    text-decoration: none;
+    @include media-breakpoint-up(md) {
+        bottom: 100px;
+        right: 100px;
+    }
+
+    &.active {
+        opacity: 1;
+        visibility: inherit;
+    }
+}
+
+
+.icon-btn {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:hsla(0,0%,75.3%,.117647);;
+}

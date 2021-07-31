@@ -71,6 +71,15 @@
       </div>
     </section>
     <Subscribe />
+    <!-- go top -->
+    <a
+      href="#"
+      class="goTop icon-btn"
+      :class="{ active: isScroll }"
+      @click.prevent="scrollTop"
+    >
+      <span class="material-icons" data-cursor="cursor"> arrow_drop_up </span>
+    </a>
   </main>
 </template>
 
@@ -101,6 +110,7 @@ export default {
       articles: {},
       newArticles: [],
       pagination: {},
+      isScroll: false,
     };
   },
   components: {
@@ -108,20 +118,6 @@ export default {
     Subscribe,
   },
   methods: {
-    getArticles(num = this.pagination.current_page || 1) {
-      const url = `${process.env.VUE_APP_API}api/${process.env.VUE_APP_PATH}/articles?page=${num}`;
-      this.$http
-        .get(url)
-        .then((res) => {
-          if (res.data.success) {
-            const articles = res.data;
-            this.articles = articles;
-          }
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
     clickCategory(category) {
       emitter.emit("categoryTop", category);
       this.$router.push(`/products/`);
@@ -133,10 +129,23 @@ export default {
       // firefox
       document.documentElement.scrollTop = el.offsetTop;
     },
+    pageScroll() {
+      if (window.scrollY > 0) {
+        this.isScroll = true;
+      } else {
+        this.isScroll = false;
+      }
+    },
+    scrollTop() {
+      document.documentElement.scrollTop = 0;
+    },
   },
   mounted() {
     console.clear();
-    this.getArticles();
+    window.addEventListener("scroll", this.pageScroll);
+  },
+  unmounted() {
+    window.removeEventListener("scroll", this.pageScroll);
   },
 };
 </script>
